@@ -1,0 +1,23 @@
+.Friends{
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #ddd;
+    .Content{
+        div{
+            margin-bottom: 15px;
+            cursor: pointer;
+            img{
+                object-fit: cover;
+                object-position: top;
+                margin-right: 8px;
+                border-radius: 7px;
+            }
+            span{
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+    }
+}
