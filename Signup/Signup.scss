@@ -1,0 +1,102 @@
+.Signup{
+    width: 100vw;
+    height: 100vh; 
+    position: absolute;
+    z-index: 9;
+    &::before{
+        content: "";
+        background: rgba(255 ,255,255,.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .content{
+        position: absolute;
+        background: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        width: 430px;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow:  0 0 5px 0 #ddd;
+        @media all and (max-width:769px) {
+            width: 340px;
+        }
+        .Header{
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            margin-bottom: 15px;
+            svg{
+                cursor: pointer;
+            }
+        }
+        .birthCaption{
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+            color: grey;   
+            margin-left: 5px;
+            .helpIcon{
+                font-size: 14px;
+                margin-left: 5px;
+            }
+        }
+        .MuiTextField-root{
+            margin:5px;
+        }
+        .MuiFormControl-fullWidth{
+            margin: 0 5px;
+            .MuiSelect-root{
+                padding: 10px;
+            }
+        }
+        .Mui-error{
+            margin-left: 0;
+        }
+        .GenderContainer{
+            margin: 15px 0;
+            .Gender{
+                >div{
+                    width: 100%;
+                }
+                .RadioGroup{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    overflow: hidden;
+                    label{
+                        width: 90px;
+                        display: flex;
+                        justify-content: center;
+                        border: 1px solid #ddd;
+                        padding: 8px 20px;
+                        border-radius: 5px;
+                        margin: 0;
+                        .MuiRadio-root{
+                            padding: 0;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .terms{
+            color: #777;
+            font-size: 11px;
+            margin: 11px 0;
+            display: block;
+        }
+        .signBTN{
+            background: #41B35D;
+            color: #fff;
+            font-weight: bold;
+        }
+        .DisabledBTN{
+            background: #ddd;
+        }
+    }
+}
