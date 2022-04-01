@@ -1,0 +1,76 @@
+.Navbar{
+    padding: 10px 16px;
+    margin-bottom:10px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    .search{
+        background-color: #F0F2F5;
+        padding: 5px 20px;
+        border-radius: 22px;
+        height: 25px;
+        input{
+            border: none;
+            background-color: #eee;
+            outline: none;
+        }
+        @media all and (max-width:986px) {
+            padding: 10px;
+            input{
+                display: none;
+            }
+        }
+    }
+    .left{
+        .menu{
+            display: none;
+            margin-left: 10px;
+            cursor: pointer;
+            @media all and (max-width:985px) {
+                display: inline-block;
+            }
+        }
+    }
+    //style middel 
+    .middel{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        span{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+            svg{
+                cursor: pointer;
+            }
+        }
+        .active{
+            border-bottom: 4px solid #127AF0 ;
+            svg{
+                path{
+                    fill: #127AF0;
+                }
+            }
+        }
+        @media all and (max-width:769px) {
+            display: none;
+        }
+    }
+    //style right side 
+    .Right{
+        display: flex;
+        justify-content: flex-end;
+        span{
+            cursor: pointer;
+            background-color: #eee;
+            border-radius: 50%;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-right: 10px;
+        }
+    }
+}
