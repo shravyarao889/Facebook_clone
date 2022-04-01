@@ -1,0 +1,131 @@
+.Post{
+    margin-top: 25px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 #ddd;
+    padding: 12px 16px 10px;
+    background: #fff;
+    @media all and (min-width:946px) {
+        width: 500px;
+    }
+    .Header{
+        img{
+            border-radius: 50%;
+            object-position: top;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        #simple-menu{
+            width: 300px;
+        }
+    }
+    .Description{
+        p{
+            margin-bottom: 10px;
+        }
+    }
+    .Reactions{
+        margin-top: 10px;
+        img{
+            margin-right: 5px;
+        }
+        .caption{
+            margin-right: 10px;
+        }
+        .NumComments{
+            span{
+                &:nth-of-type(1){
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .Actions{
+        border-top: 1px solid #ddd;
+        margin-top: 15px;
+        ul{
+            display: flex;
+            justify-content: center;
+            div , label{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: grey;
+                font-weight: 500;
+                cursor: pointer;
+                svg{
+                    margin-right: 5px;
+
+                }
+            }
+            .activeLike{
+                color: #056BE1;
+                font-weight: bold;
+            }
+        }
+    }
+    .Comments{
+        border-top: 1px solid #ddd;
+        .comment{
+            margin: 10px 0;
+            img{
+                border-radius: 50%;
+                margin-right: 10px;
+                object-fit: cover;
+                object-position: top;
+            }
+            .text{
+                background: #eee;
+                padding: 10px 15px;
+                border-radius: 15px;
+                h6{
+                    &:nth-of-type(1){
+                        font-weight: 500;
+                    }
+                }
+            }
+            .actions{
+                span{
+                    margin: 2px 5px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    color: #65676B;
+                }
+            }
+        }
+    }
+    .addComment{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        img{
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        input{
+            width: 100%;
+            background-color: #f0f2f5;
+            border-top-left-radius: 22px;
+            border-bottom-left-radius: 22px;
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+        }
+        .icons{
+            background-color: #f0f2f5;
+            border-top-right-radius: 22px;
+            border-bottom-right-radius: 22px;
+            padding: 10px 15px;
+            svg{
+                margin: 0 5px;
+                cursor: pointer;
+                color: grey;
+                font-size: 16px;
+            }
+        }
+        .ArContent{
+            text-align: right;
+        }
+    }
+}
