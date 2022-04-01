@@ -1,0 +1,15 @@
+.PhotosSec{
+    background-color: #fff;
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 #ddd;
+    .Photos{
+        img{
+            margin: 0 3px;
+            cursor: pointer;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
