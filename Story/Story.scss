@@ -1,0 +1,84 @@
+.Stories{
+    width: 100%;
+    .story{
+        width: 112px;
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 8px;
+        cursor: pointer;
+        box-shadow: 0 0 3px 0 #ddd;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            background-color: rgba(0.8,0.8,0.8,0.2);
+            transition: all .2s ease-in-out;
+            z-index: 1;
+        }
+        .storyImg{
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all .3s ease-in-out;
+        }
+        .title{
+            margin-top: auto;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            margin: 0;
+            
+        }
+        .userImg{
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border: 4px solid #127AF0;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+        }
+        &:hover{
+            &::before{
+                background-color: rgba(0.8,0.8,0.8,0.3);
+                transition: all .2s ease-in-out;
+                z-index: 3;
+            }
+            .storyImg{
+                transform:scale3d(1.1,1.1,1.1);
+                transition: all .3s ease-in-out;
+            }
+        }
+    }
+    .noStory{
+        .title{
+            background-color: #fff;
+            color: #000;
+            bottom: 0;
+            padding: 25px 0 10px 0;
+            font-size: 12px;
+            z-index: 1;
+        }
+        .Add{
+            position: absolute;
+            left: 50%;
+            bottom: 25px;
+            z-index: 2;
+            transform: translateX(-50%);
+            background-color: #127AF0;
+            color: #fff;
+            padding: 5px ;
+            border-radius: 50%;
+            font-weight: bold;
+            border: 5px solid #fff;
+        }
+    }
+}
