@@ -1,0 +1,116 @@
+.CreatePost{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    &::before{
+        content:"";
+        background: rgba(255,255,255,.8);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .post{
+        width: 500px;
+        min-height: 395px;
+        background: #fff;
+        box-shadow: 0 0 5px 0 #ddd;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 99;
+        padding: 10px 15px;
+        .Header{
+            padding: 10px 15px;
+            justify-content: center;
+            border-bottom: 1px solid #ddd;
+            svg{
+                background: #ddd;
+                padding: 5px;
+                border-radius: 50%;
+                cursor: pointer;
+                position: absolute;
+                right: 15px;
+            }
+            h6{
+                flex: 0 1 auto;
+                font-weight: bold;
+            }
+        }
+        .User{
+            margin: 10px 0;
+            img{
+                border-radius: 50%;
+                margin-right: 5px;
+                object-position: top;
+                object-fit: cover;
+            }
+            .place{
+                background: #ddd;
+                border-radius: 5px;
+                padding: 2px 5px ;
+                cursor: pointer;
+                span{
+                    margin: 0 5px;
+                }
+                svg{
+                    font-size: 15px;
+                }
+            }
+        }
+        textarea{
+            border: none;
+            outline: none;
+            resize: none;
+            &::placeholder{
+                font-size: 22px;
+            }
+        }
+        .ArContent{
+            text-align: right;
+        }
+        .media{
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin: 15px 0;
+            padding: 10px;
+            svg{
+                margin: 0 5px;
+                cursor: pointer;
+                &:nth-of-type(1){
+                    color: #41B35D;
+                }
+                &:nth-of-type(2){
+                    color: #3B87E8;
+                }
+                &:nth-of-type(3){
+                    color: #EAB026;
+                }
+                &:nth-of-type(4){
+                    color: #E94F3A;
+                }
+                &:nth-of-type(5){
+                    color: #E94F3A;
+                }
+            }
+        }
+        .uploadImages{
+            position: relative;
+            svg{
+                background: #ddd;
+                border-radius: 50%;
+                padding: 5px;
+                position: absolute;
+                top: 5px ;
+                right: 10px;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}
