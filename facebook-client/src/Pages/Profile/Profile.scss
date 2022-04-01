@@ -1,0 +1,159 @@
+.Profile{
+    display: flex;
+    flex-direction: column;
+    .TopPart{
+        background: linear-gradient(to bottom , #000 0% , #fff 100%);
+        .CoverImage{
+            width: 100%;
+            height: 350px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            @media all and (min-width:946px) {
+                width: 940px;
+            }
+            img{
+                object-fit: cover;
+                object-position: center;
+            }
+            label{
+                position: absolute;
+                right: 20px;
+                bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 0 0 5px 0 #000;
+                background: #fff;
+                box-shadow: none;
+                text-transform: capitalize;
+                svg{
+                    margin-right: 8px;
+                }
+                @media all and (max-width:769px) {
+                    .text{
+                        display: none;
+                    }
+                    svg{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        .emptyImg{
+            background-color: #f0f2f5;
+        }
+    }
+    .bg-white{
+        background: #fff !important;
+    }
+    .ProfileTitle{
+        align-self: center;
+        width: 90%;
+        z-index: 9;
+        @media all and (min-width:946px) {
+            width: 940px;
+        }
+
+        .leftSide{
+            margin-top:-50px;
+            @media all and (max-width:769px) {
+                margin-top:-80px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        .profilePic{
+            position: relative;
+            img{
+                border-radius: 50%;
+                object-fit: cover;
+                border: 5px solid #fff;
+            }
+            svg{
+                position: absolute;
+                bottom: 25px;
+                right: 10px;
+                background-color: #D8DADF;
+                padding: 5px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+        .info{
+            margin-left: 15px;
+            h5{
+                font-weight: bold;
+            }
+            .friendsPics{
+                margin-top: 6px;
+                img{
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: -5px;
+                    border: 2px solid #fff;
+                }
+            }
+        }
+        .BTNs{
+            align-items: flex-end;
+            height: 100%;
+            button{
+                text-transform: capitalize;
+                margin-right: 15px;
+                &:nth-of-type(1){
+                    background: #1b74e4;
+                    color: #fff;
+                    svg{
+                        background: #fff;
+                        color: #1b74e4;
+                        border-radius: 50%;
+                        font-size: 18px;
+                    }
+                }
+                svg{
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .Naviagation{
+        align-self: center;
+        width: 90%;
+        margin-top: 20px;
+        border-top: 1px solid #959699;
+        @media all and (min-width:946px) {
+            width: 940px;
+        }
+        ul{
+            display: flex;
+            padding-bottom: 0;
+            div{
+                width: auto;
+                text-align: center;
+                color: #959699;
+                font-weight:bold;
+                font-size: 15px;
+            }
+            .active{
+                color: #1b74e4;
+                border-bottom: 3px solid #1b74e4;
+            }
+        }
+    }
+    .PostsSection{
+        background: #F0F2F5;
+        .LeftSide{
+            margin-top: 25px;
+            margin-right: 25px;
+            @media all and (max-width:769px) {
+                margin-right: 0;
+            }
+        }
+    }
+}

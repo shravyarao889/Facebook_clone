@@ -1,0 +1,49 @@
+.Login{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logo{
+        margin-left: -28px;
+    }
+    h4{
+        font-size: 28px;
+    }
+    .form{
+        background: #fff;
+        width: 350px;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 0 5px 0 #ddd;
+        .MuiForm{
+            .MuiTextField-root{
+                margin: 10px 0;
+            }
+            button{
+                background: #3B87E8;
+                text-transform: capitalize;
+                padding: 8px 0;
+                font-size: 20px;
+                border-radius: 6px;
+                font-weight: bold;
+            }
+        }
+        .forget{
+            color: #3B87E8;
+            font-size: 13px;
+            font-weight: 500;
+            border-bottom: 1px solid #ddd;
+            width: 100%;
+            padding: 15px 0;
+        }
+        .newAcc{
+            margin-top: 20px;
+            background: #41B35D;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: 17px;
+        }
+    }
+}
