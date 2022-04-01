@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css'
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+//https://facebook-clone-mern-stack.herokuapp.com/api/v1/
+axios.defaults.baseURL = 'https://facebook-clone-mern-stack.herokuapp.com/api/v1/';
+axios.defaults.headers = {Authorization:`Bearer ${localStorage.getItem('AccessToken')}`}
 
 ReactDOM.render(
   <React.StrictMode>

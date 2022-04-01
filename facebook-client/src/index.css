@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family:"segoeUI";
+    src: url('./Assets/fonts/Segoe\ ui\ historic.ttf');
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"segoeUI";
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.MuiButton-containedPrimary{
+    background-color: #056BE1 !important;
 }
