@@ -37,16 +37,20 @@ https://facebook-client-shravyarao889.vercel.app/
 - show following users posts in home page 
 - **and More....** 
 - 
-- Sign-Up Page:
+Sign-Up Page:
+
 ![Screenshot (494)](https://user-images.githubusercontent.com/96167495/161379996-a7eac1fa-ab0b-4020-a864-bfd661a1a902.png)
 
 Sign-In Page:
+
 ![Screenshot (493)](https://user-images.githubusercontent.com/96167495/161380019-d92e9c1e-d7f1-434b-89ec-0bcc1a473e0b.png)
 
 Home Page:
+
 ![Screenshot (495)](https://user-images.githubusercontent.com/96167495/161380044-a107c4cc-4c7d-42ac-b584-64f47b6b7955.png)
 
 Profile Page:
+
 ![Screenshot (499)](https://user-images.githubusercontent.com/96167495/161380076-f97e34a0-fa03-4ee7-95de-fd3e55eaa2dd.png)
 
 
