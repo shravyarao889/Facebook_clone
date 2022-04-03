@@ -5,7 +5,7 @@ Facebook clone using Mongodb , Express , React and Node js
 ![This is an image](https://i.ibb.co/tZFQLLm/2022-03-19-16-48.png)
 
 ### Live Demo (using vercel and heroku)
-https://facebook-client-shravyarao889.vercel.app/
+https://facebook-client-zeta.vercel.app
 
 ## Technology 
 ### Frontend 
