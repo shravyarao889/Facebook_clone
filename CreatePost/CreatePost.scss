@@ -12,6 +12,7 @@
         top: 0;
         left: 0;
     }
+    
     .post{
         width: 500px;
         min-height: 395px;
@@ -41,6 +42,7 @@
                 font-weight: bold;
             }
         }
+        
         .User{
             margin: 10px 0;
             img{
@@ -62,6 +64,7 @@
                 }
             }
         }
+        
         textarea{
             border: none;
             outline: none;
@@ -98,6 +101,7 @@
                 }
             }
         }
+        
         .uploadImages{
             position: relative;
             svg{
