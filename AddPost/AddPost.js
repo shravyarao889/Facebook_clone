@@ -7,7 +7,6 @@ import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfie
 import { AppContenxt } from "../../ContextApi/AppContext";
 
 
-
 const AddPost = ({OpenCreatePost}) => {
     const {UserGState} = useContext(AppContenxt);
     return(
@@ -16,6 +15,7 @@ const AddPost = ({OpenCreatePost}) => {
                 <img src={UserGState.info.profile_pic} alt="profile" width="40px" height="40px" />
                 <input  placeholder={`whats in your mind, ${UserGState.info.username} ?`}  onClick={(e) => {e.stopPropagation(); OpenCreatePost(true) }}/>
             </Box>
+            
             <List className="Actions">
                 <ListItem button>
                     <VideoCallIcon />
@@ -30,9 +30,9 @@ const AddPost = ({OpenCreatePost}) => {
                     <Typography variant="body2">Feeling/Activity</Typography>
                 </ListItem>
             </List>
+            
         </Box>
     )
 }
-
 
 export default AddPost;
