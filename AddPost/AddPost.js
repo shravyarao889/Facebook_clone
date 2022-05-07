@@ -6,6 +6,8 @@ import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
 import SentimentVerySatisfiedIcon from '@material-ui/icons/SentimentVerySatisfied';
 import { AppContenxt } from "../../ContextApi/AppContext";
 
+
+
 const AddPost = ({OpenCreatePost}) => {
     const {UserGState} = useContext(AppContenxt);
     return(
@@ -31,4 +33,6 @@ const AddPost = ({OpenCreatePost}) => {
         </Box>
     )
 }
+
+
 export default AddPost;
