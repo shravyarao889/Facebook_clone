@@ -15,6 +15,7 @@ import { AddNewPost } from "../../Apis/Post";
 import { CircularProgress } from "@material-ui/core";
 import { AppContenxt } from "../../ContextApi/AppContext";
 import { HanldleErr } from "../../Utils/Utils";
+
 const CreatePost = ({Open , Data}) => {
     const {UserGState , disptachPost} = useContext(AppContenxt);
     const [PostData , setPostData ] = useState({images:[]}); // to store all post data 
@@ -106,4 +107,6 @@ const CreatePost = ({Open , Data}) => {
         </Box>
     )
 }
+
+
 export default CreatePost;
