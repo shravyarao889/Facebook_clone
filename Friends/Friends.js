@@ -1,6 +1,7 @@
 import { Box , Typography } from "@material-ui/core"
 import Profile from '../../Assets/images/profile.jpeg'
 import './Friends.scss'
+
 const Friends = () => {
     return (
         <Box className='Friends'>
@@ -32,5 +33,6 @@ const Friends = () => {
         </Box>
     )
 }
+
 
 export default Friends
